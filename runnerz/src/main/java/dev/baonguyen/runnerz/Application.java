@@ -26,7 +26,7 @@ public class Application {
 	@Bean
 	CommandLineRunner runner() {
 		return args -> {
-			Run run = new Run(1, "First Run", LocalDateTime.now(), LocalDateTime.now().plus(1, ChronoUnit.HOURS), 5.0, Location.OUTDOOR);
+			Run run = new Run(1, "First Run", LocalDateTime.now(), LocalDateTime.now().plusHours(1), 5.0, Location.OUTDOOR);
 			log.info("Run: " + run);
 		};
 	}
