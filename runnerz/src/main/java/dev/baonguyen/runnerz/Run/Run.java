@@ -9,13 +9,13 @@ public record Run(
         Integer id,
         @NotEmpty
         String title,
-        LocalDateTime start,
-        LocalDateTime end,
+        LocalDateTime start_on,
+        LocalDateTime end_on,
         @Positive
         Double miles,
         Location location
 ) {
-
+//
 //    public Run {
 //        if (end() == null || start() == null) {
 //            throw new IllegalArgumentException("start and end can't be null");
